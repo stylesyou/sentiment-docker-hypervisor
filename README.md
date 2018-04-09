@@ -17,8 +17,13 @@
 
   `shell 
 
-	docker run -it sentiment:1.0 bash
+	docker run -d -p 80:80 --name sentiment sentiment:1.0
 
-3. copy the content if you need or just expose the port number
+        docker ps 
+
+	docker exec -it sentiment bash
+ `
+
+4. copy the content if you need or just expose the port number
 
 
