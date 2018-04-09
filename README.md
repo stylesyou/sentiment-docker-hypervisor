@@ -16,7 +16,7 @@
 
   use the docker image id or name sentiment:1.0
 
-	docker run -d -p 80:80 --name sentiment sentiment:1.0
+	docker run -dti -p 80:80 --name sentiment sentiment:1.0
 
         docker ps 
 
