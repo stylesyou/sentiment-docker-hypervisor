@@ -3,6 +3,10 @@
 1. Build the docker image
 
  `shell
+        git clone https://github.com/stylesyou/sentiment-docker
+
+        cd sentiment-docker
+
 	docker build -t sentiment:1.0
  `
 
@@ -10,10 +14,9 @@
 
   List the docker image build from previous step.
 
-  `shell 
-	docker image list
-  `
-  use the docker image id or name 'sentiment:1.0'
+  `shell  docker image list '
+
+  use the docker image id or name sentiment:1.0
 
   `shell 
 
