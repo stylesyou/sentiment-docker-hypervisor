@@ -16,11 +16,11 @@
 
   use the docker image id or name sentiment:1.0
 
-	`docker run -d -p 80:80 --name sentiment sentiment:1.0
+	docker run -d -p 80:80 --name sentiment sentiment:1.0
 
         docker ps 
 
-	docker exec -it sentiment bash`
+	docker exec -it sentiment bash
 
 4. copy the content if you need or just expose the port number
 
