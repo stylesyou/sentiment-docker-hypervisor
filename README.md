@@ -24,4 +24,6 @@
 
 4. copy the content if you need or just expose the port number
 
+    copy code to files dir
+
 
