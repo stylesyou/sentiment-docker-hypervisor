@@ -35,9 +35,15 @@ RUN pip install matplotlib
 RUN pip install tweepy
 
 #copy application files
+COPY files $HOME/srv/files
 
-#EXPOSE 80
-#WORKDIR /src
+#working dir to run pyhton
+WORKDIR /srv/files
+
 # add contents to folder
-#ADD src $HOME/src
-#CMD ["/usr/bin/supervisord", "-c", "/supervisor/supervisord.conf"]
+CMD [ "python", "Better_training_data.py" ]
+CMD [ "python", "chinking.py" ]
+CMD [ "python", "chunking.py" ]
+CMD [ "python", "combining_algos_with_vote.py" ]
+
+# END
