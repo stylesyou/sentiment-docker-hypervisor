@@ -6,7 +6,7 @@
 
         cd sentiment-docker
 	
-	`docker build -t sentiment:1.0`
+	`docker build -t sentiment:1.0 .`
 
 2. Run the docker
 
