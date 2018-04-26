@@ -22,6 +22,9 @@ RUN pip install numpy
 # install NLTK
 RUN pip install nltk
 
+# Install nltk packages 
+RUN python -m nltk.downloader popular
+
 # install scipy
 RUN pip install scipy
 
@@ -42,8 +45,8 @@ WORKDIR /srv/files
 
 # add contents to folder
 CMD [ "python", "Better_training_data.py" ]
-CMD [ "python", "chinking.py" ]
-CMD [ "python", "chunking.py" ]
-CMD [ "python", "combining_algos_with_vote.py" ]
+#CMD [ "python", "chinking.py" ]
+#CMD [ "python", "chunking.py" ]
+#CMD [ "python", "combining_algos_with_vote.py" ]
 
 # END
